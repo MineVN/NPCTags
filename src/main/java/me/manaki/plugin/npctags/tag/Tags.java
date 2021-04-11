@@ -66,6 +66,8 @@ public class Tags {
         for (String line : lines) {
             h.appendTextLine(line);
         }
+
+        h.teleport(entity.getLocation().add(0, 2 + h.getHeight(), 0));
     }
 
     public static void remove(int npcID) {
